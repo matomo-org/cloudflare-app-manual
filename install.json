@@ -1,0 +1,26 @@
+{
+  "resources": {
+    "body": [
+      {
+        "type": "script",
+        "src": "./source/app.js"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "piwikdomain": {
+        "title": "Piwik URL",
+        "type": "string",
+        "description": "Enter the URL where your Piwik is installed, eg http://piwik.example.com"
+      },
+      "piwikidsite": {
+        "default": 1,
+        "title": "Piwik Site ID",
+        "description": "Enter the ID of the site you want to track the data into.",
+        "type": "integer",
+        "minimum": 1
+      }
+    }
+  }
+}

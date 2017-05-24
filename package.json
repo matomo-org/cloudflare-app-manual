@@ -1,0 +1,31 @@
+{
+  "name": "Piwik Analytics",
+  "version": "0.0.1",
+  "description": "Add the Piwik tracking code to your website. If you don't have a running Piwik yet, use the Piwik Analytics Cloud app.",
+  "main": "app.js",
+  "scripts": {
+    "lint": "standard ./source/**/*.js || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/innocraft/cloudflare-app-manual.git"
+  },
+  "author": "InnoCraft Ltd.",
+  "license": "InnoCraft EULA",
+  "bugs": {
+    "url": "https://www.innocraft.com#contact"
+  },
+  "homepage": "https://www.innocraft.com",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^9.0.2"
+  },
+  "standard": {
+    "globals": [
+      "INSTALL",
+      "INSTALL_OPTIONS",
+      "INSTALL_SCOPE",
+      "INSTALL_ID"
+    ]
+  }
+}
