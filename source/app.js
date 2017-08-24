@@ -25,7 +25,7 @@
     _paq.push(["setTrackerUrl", domain + "piwik.php"]);
     _paq.push(["setSiteId", options.piwikidsite]);
 
-    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-    g.defer=true; g.async=true; g.src=domain+"piwik.js"; s.parentNode.insertBefore(g,s);
-
+    var piwikVendorScript = document.createElement('script');
+    piwikVendorScript.src = domain + 'piwik.js';
+    document.head.appendChild(piwikVendorScript);
 }());

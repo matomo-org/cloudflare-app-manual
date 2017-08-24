@@ -7,19 +7,25 @@
       }
     ]
   },
+  "preview": {
+    "hide": true
+  },
   "options": {
     "properties": {
       "piwikdomain": {
-        "title": "Piwik URL",
+        "title": "The URL of your Piwik installation",
         "type": "string",
-        "description": "Enter the URL where your Piwik is installed, eg http://piwik.example.com"
+        "format": "url",
+        "placeholder": "https://piwik.example.com",
+        "description": "Enter the URL where your Piwik is installed, eg https://piwik.example.com",
+        "required": true
       },
       "piwikidsite": {
-        "default": 1,
         "title": "Piwik Site ID",
-        "description": "Enter the ID of the site you want to track the data into.",
+        "description": "Enter the ID of the site you want to track the data into. You can retrieve the ID of your site by logging into your Piwik and going to 'Administration => Websites: Manage'.",
         "type": "integer",
-        "minimum": 1
+        "minimum": 1,
+        "required": true
       }
     }
   }

@@ -1,7 +1,7 @@
 {
   "name": "Piwik Analytics",
   "version": "0.0.1",
-  "description": "Add the Piwik tracking code to your website. If you don't have a running Piwik yet, use the Piwik Analytics Cloud app.",
+  "description": "Adds the Piwik tracking code to your website. If you don't have a running Piwik yet, use the Piwik Analytics Cloud app.",
   "main": "app.js",
   "scripts": {
     "lint": "standard ./source/**/*.js || true"
