@@ -2,7 +2,7 @@
   "name": "matomo-analytics-cloudflare-app",
   "version": "1.0.0",
   "description": "Adds the Matomo tracking code to your website. If you don't have a running Matomo yet, use the Matomo Analytics Cloud app.",
-  "main": "app.js",
+  "main": "source/app.js",
   "scripts": {
     "lint": "standard ./source/**/*.js || true"
   },
