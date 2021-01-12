@@ -18,7 +18,7 @@
   "homepage": "https://www.innocraft.com",
   "dependencies": {},
   "devDependencies": {
-    "standard": "^9.0.2"
+    "standard": "^16.0.3"
   },
   "standard": {
     "globals": [
