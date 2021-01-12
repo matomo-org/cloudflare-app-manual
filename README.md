@@ -1,2 +1,2 @@
-# Piwik Analytics Cloud by InnoCraft - Cloudflare App
+# Matomo Analytics Cloud by InnoCraft - Cloudflare App
 
