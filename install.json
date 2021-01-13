@@ -39,7 +39,7 @@
       },
       "clientSideDNT": {
         "title": "Enable client side DoNotTrack detection",
-        "description": "So tracking requests will not be sent if visitors do not wish to be tracked."
+        "description": "So tracking requests will not be sent if visitors do not wish to be tracked.",
         "type": "boolean",
         "default": false,
         "order": 4
