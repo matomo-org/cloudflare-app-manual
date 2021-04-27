@@ -1,24 +1,24 @@
 {
-  "name": "Piwik Analytics",
-  "version": "0.0.1",
-  "description": "Adds the Piwik tracking code to your website. If you don't have a running Piwik yet, use the Piwik Analytics Cloud app.",
-  "main": "app.js",
+  "name": "matomo-analytics-cloudflare-app",
+  "version": "1.0.0",
+  "description": "Adds the Matomo tracking code to your website. If you don't have a running Matomo yet, use the Matomo Analytics Cloud app.",
+  "main": "source/app.js",
   "scripts": {
     "lint": "standard ./source/**/*.js || true"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/innocraft/cloudflare-app-manual.git"
+    "url": "git+https://github.com/matomo-org/cloudflare-app-manual.git"
   },
-  "author": "InnoCraft Ltd.",
+  "author": "Matomo Team",
   "license": "InnoCraft EULA",
   "bugs": {
-    "url": "https://www.innocraft.com#contact"
+    "url": "https://github.com/matomo-org/cloudflare-app-manual/issues"
   },
-  "homepage": "https://www.innocraft.com",
+  "homepage": "https://matomo.org/",
   "dependencies": {},
   "devDependencies": {
-    "standard": "^9.0.2"
+    "standard": "^16.0.3"
   },
   "standard": {
     "globals": [

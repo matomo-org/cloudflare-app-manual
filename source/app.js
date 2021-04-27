@@ -1,31 +1,41 @@
 (function () {
-    'use strict';
+  'use strict'
 
-    var options = INSTALL_OPTIONS;
+  var options = INSTALL_OPTIONS
 
-    window._paq = window._paq || [];
+  window._paq = window._paq || []
 
-    if (!options.piwikdomain || !options.piwikidsite || options.piwikidsite === '0') {
-        return;
-    }
+  if (!options.piwikdomain || !options.piwikidsite || options.piwikidsite === '0') {
+    return
+  }
 
-    _paq.push(["trackPageView"]);
-    _paq.push(["enableLinkTracking"]);
+  window._paq.push(['trackPageView'])
+  window._paq.push(['enableLinkTracking'])
 
-    var domain = String(options.piwikdomain);
+  if (options.disableCookies) {
+    window._paq.push(['disableCookies'])
+  }
 
-    if (domain.indexOf('http') !== 0 && domain.indexOf('//') !== 0) {
-        domain = 'https://' + domain;
-    }
+  if (options.clientSideDNT) {
+    window._paq.push(['setDoNotTrack', true])
+  }
 
-    if (domain.charAt(domain.length - 1) !== '/') {
-        domain = domain + '/';
-    }
+  var domain = String(options.piwikdomain)
 
-    _paq.push(["setTrackerUrl", domain + "piwik.php"]);
-    _paq.push(["setSiteId", options.piwikidsite]);
+  if (domain.indexOf('http') !== 0 && domain.indexOf('//') !== 0) {
+    domain = 'https://' + domain
+  }
 
-    var piwikVendorScript = document.createElement('script');
-    piwikVendorScript.src = domain + 'piwik.js';
-    document.head.appendChild(piwikVendorScript);
-}());
+  if (domain.charAt(domain.length - 1) !== '/') {
+    domain = domain + '/'
+  }
+
+  window._paq.push(['setTrackerUrl', domain + 'matomo.php'])
+  window._paq.push(['setSiteId', options.piwikidsite])
+
+  var piwikVendorScript = document.createElement('script')
+  var firstScriptOnPage = document.getElementsByTagName('script')[0]
+  piwikVendorScript.src = domain + 'matomo.js'
+  piwikVendorScript.async = true
+  firstScriptOnPage.parentNode.insertBefore(piwikVendorScript, firstScriptOnPage)
+}())
